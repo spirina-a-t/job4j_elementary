@@ -8,6 +8,5 @@ public class Max {
     public static void main(String[] args) {
         int rsl = Max.max(5, 1);
         System.out.println(rsl);
-
     }
 }

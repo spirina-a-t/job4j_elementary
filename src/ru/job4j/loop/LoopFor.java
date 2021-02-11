@@ -6,5 +6,4 @@ public class LoopFor {
             System.out.println(index);
         }
     }
-
 }

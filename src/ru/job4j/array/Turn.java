@@ -8,6 +8,6 @@ public class Turn {
             array[i] = temp;
         }
         return array;
-        }
+    }
 }
 
