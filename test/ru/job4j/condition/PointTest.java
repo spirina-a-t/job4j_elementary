@@ -8,45 +8,37 @@ public class PointTest {
 
     @Test
     public void when00to20then2() {
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
+        Point a = new Point(0, 0);
+        Point b = new Point(2, 0);
         int expected = 2;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when53to810then7() {
-        int x1 = 5;
-        int y1 = 3;
-        int x2 = 8;
-        int y2 = 10;
+        Point a = new Point(5, 3);
+        Point b = new Point(8, 10);
         double expected = 7.61;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when50to00then5() {
-        int x1 = 5;
-        int y1 = 0;
-        int x2 = 0;
-        int y2 = 0;
+        Point a = new Point(5, 0);
+        Point b = new Point(0, 0);
         int expected = 5;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when33to03then3() {
-        int x1 = 3;
-        int y1 = 3;
-        int x2 = 0;
-        int y2 = 3;
+        Point a = new Point(3, 3);
+        Point b = new Point(0, 3);
         int expected = 3;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
